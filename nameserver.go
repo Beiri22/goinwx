@@ -196,7 +196,7 @@ type NameserverRecordRequest struct {
 	Content                string `structs:"content"`
 	Name                   string `structs:"name,omitempty"`
 	TTL                    int    `structs:"ttl,omitempty"`
-	Priority               string `structs:"prio,omitempty"`
+	Priority               float `structs:"prio,omitempty"`
 	URLRedirectType        string `structs:"urlRedirectType,omitempty"`
 	URLRedirectTitle       string `structs:"urlRedirectTitle,omitempty"`
 	URLRedirectDescription string `structs:"urlRedirectDescription,omitempty"`
@@ -259,7 +259,7 @@ type NameserverRecord struct {
 	Type                   string `mapstructure:"type"`
 	Content                string `mapstructure:"content"`
 	TTL                    int    `mapstructure:"TTL"`
-	Priority               string `mapstructure:"prio"`
+	Priority               bool `mapstructure:"prio"`
 	URLRedirectType        string `mapstructure:"urlRedirectType"`
 	URLRedirectTitle       string `mapstructure:"urlRedirectTitle"`
 	URLRedirectDescription string `mapstructure:"urlRedirectDescription"`
