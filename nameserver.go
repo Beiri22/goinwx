@@ -196,7 +196,7 @@ type NameserverRecordRequest struct {
 	Content                string `structs:"content"`
 	Name                   string `structs:"name,omitempty"`
 	TTL                    int    `structs:"ttl,omitempty"`
-	Priority               float `structs:"prio,omitempty"`
+	Priority               float64 `structs:"prio,omitempty"`
 	URLRedirectType        string `structs:"urlRedirectType,omitempty"`
 	URLRedirectTitle       string `structs:"urlRedirectTitle,omitempty"`
 	URLRedirectDescription string `structs:"urlRedirectDescription,omitempty"`
