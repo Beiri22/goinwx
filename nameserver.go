@@ -230,7 +230,7 @@ type NameserverInfoRequest struct {
 	Name     string `structs:"name,omitempty"`
 	Content  string `structs:"content,omitempty"`
 	TTL      int    `structs:"ttl,omitempty"`
-	Priority string `structs:"prio,omitempty"`
+	Priority int64 `structs:"prio,omitempty"`
 }
 
 // NamserverInfoResponse API model.
