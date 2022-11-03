@@ -196,7 +196,7 @@ type NameserverRecordRequest struct {
 	Content                string `structs:"content"`
 	Name                   string `structs:"name,omitempty"`
 	TTL                    int    `structs:"ttl,omitempty"`
-	Priority               int    `structs:"prio,omitempty"`
+	Priority               string `structs:"prio,omitempty"`
 	URLRedirectType        string `structs:"urlRedirectType,omitempty"`
 	URLRedirectTitle       string `structs:"urlRedirectTitle,omitempty"`
 	URLRedirectDescription string `structs:"urlRedirectDescription,omitempty"`
@@ -230,7 +230,7 @@ type NameserverInfoRequest struct {
 	Name     string `structs:"name,omitempty"`
 	Content  string `structs:"content,omitempty"`
 	TTL      int    `structs:"ttl,omitempty"`
-	Priority int    `structs:"prio,omitempty"`
+	Priority string `structs:"prio,omitempty"`
 }
 
 // NamserverInfoResponse API model.
@@ -259,7 +259,7 @@ type NameserverRecord struct {
 	Type                   string `mapstructure:"type"`
 	Content                string `mapstructure:"content"`
 	TTL                    int    `mapstructure:"TTL"`
-	Priority               int    `mapstructure:"prio"`
+	Priority               string `mapstructure:"prio"`
 	URLRedirectType        string `mapstructure:"urlRedirectType"`
 	URLRedirectTitle       string `mapstructure:"urlRedirectTitle"`
 	URLRedirectDescription string `mapstructure:"urlRedirectDescription"`
