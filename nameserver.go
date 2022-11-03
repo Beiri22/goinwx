@@ -190,18 +190,18 @@ type NameserverCheckResponse struct {
 
 // NameserverRecordRequest API model.
 type NameserverRecordRequest struct {
-	RoID                   int    `structs:"roId,omitempty"`
-	Domain                 string `structs:"domain,omitempty"`
-	Type                   string `structs:"type"`
-	Content                string `structs:"content"`
-	Name                   string `structs:"name,omitempty"`
-	TTL                    int    `structs:"ttl,omitempty"`
+	RoID                   int     `structs:"roId,omitempty"`
+	Domain                 string  `structs:"domain,omitempty"`
+	Type                   string  `structs:"type"`
+	Content                string  `structs:"content"`
+	Name                   string  `structs:"name,omitempty"`
+	TTL                    int     `structs:"ttl,omitempty"`
 	Priority               float64 `structs:"prio,omitempty"`
-	URLRedirectType        string `structs:"urlRedirectType,omitempty"`
-	URLRedirectTitle       string `structs:"urlRedirectTitle,omitempty"`
-	URLRedirectDescription string `structs:"urlRedirectDescription,omitempty"`
-	URLRedirectFavIcon     string `structs:"urlRedirectFavIcon,omitempty"`
-	URLRedirectKeywords    string `structs:"urlRedirectKeywords,omitempty"`
+	URLRedirectType        string  `structs:"urlRedirectType,omitempty"`
+	URLRedirectTitle       string  `structs:"urlRedirectTitle,omitempty"`
+	URLRedirectDescription string  `structs:"urlRedirectDescription,omitempty"`
+	URLRedirectFavIcon     string  `structs:"urlRedirectFavIcon,omitempty"`
+	URLRedirectKeywords    string  `structs:"urlRedirectKeywords,omitempty"`
 }
 
 // NameserverCreateRequest API model.
@@ -230,7 +230,7 @@ type NameserverInfoRequest struct {
 	Name     string `structs:"name,omitempty"`
 	Content  string `structs:"content,omitempty"`
 	TTL      int    `structs:"ttl,omitempty"`
-	Priority int64 `structs:"prio,omitempty"`
+	Priority int64  `structs:"prio,omitempty"`
 }
 
 // NamserverInfoResponse API model.
@@ -259,7 +259,6 @@ type NameserverRecord struct {
 	Type                   string `mapstructure:"type"`
 	Content                string `mapstructure:"content"`
 	TTL                    int    `mapstructure:"TTL"`
-	Priority               bool `mapstructure:"prio"`
 	URLRedirectType        string `mapstructure:"urlRedirectType"`
 	URLRedirectTitle       string `mapstructure:"urlRedirectTitle"`
 	URLRedirectDescription string `mapstructure:"urlRedirectDescription"`
