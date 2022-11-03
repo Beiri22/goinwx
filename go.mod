@@ -1,4 +1,4 @@
-module github.com/nrdcg/goinwx
+module github.com/Beiri22/goinwx
 
 go 1.15
 
